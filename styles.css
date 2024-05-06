@@ -10,13 +10,14 @@
 
 html {
 	height: 100%;
+	font-size: 16px;
 }
 
 body {
 	min-height: 100%;
 	background-color: var(--primary-color);
 	color: #000;
-	font-size: 16px;
+	font-size: clamp(1rem, 0.8125rem + 0.8333vw, 1.25rem);
 	font-family: Arial, sans-serif;
 	display: flex;
 	flex-direction: column;
@@ -32,7 +33,8 @@ body {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
-	width: 364px;
+	width: 100%;
+	max-width: 364px;
 	background-color: #fff;
 	padding: 20px;
 	border: 1px solid black;
@@ -61,7 +63,11 @@ body {
 
 .preview-card__title {
 	font-weight: bold;
-	font-size: 1.4rem;
+	font-size: clamp(1.25rem, 1.0625rem + 0.8333vw, 1.5rem);
+}
+
+.preview-card__title:hover {
+	color: var(--primary-color);
 }
 
 .preview-card__para {
