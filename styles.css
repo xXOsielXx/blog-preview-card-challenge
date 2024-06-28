@@ -17,7 +17,6 @@ body {
 	min-height: 100%;
 	background-color: var(--primary-color);
 	color: #000;
-	font-size: clamp(0.75rem, 0.5625rem + 0.8333vw, 1rem);
 	font-family: Arial, sans-serif;
 	padding: 0 32px;
 	display: flex;
@@ -28,11 +27,11 @@ body {
 .preview-card {
 	display: flex;
 	flex-direction: column;
-	gap: 20px;
+	gap: 24px;
 	width: 100%;
 	max-width: 384px;
 	background-color: #fff;
-	padding: 20px;
+	padding: 24px;
 	margin: auto 0;
 	border: 1px solid black;
 	border-radius: 16px;
@@ -50,17 +49,26 @@ body {
 	border-radius: 8px;
 }
 
+.preview-card__learning,
+.preview-card__title,
+.preview-card__user-name {
+	font-weight: 1000;
+}
+
 .preview-card__learning {
 	align-self: start;
 	background-color: var(--primary-color);
-	font-weight: bold;
 	padding: 8px 16px;
 	border-radius: 8px;
 }
 
+.preview-card__learning,
+.preview-card__date {
+	font-size: 12px;
+}
+
 .preview-card__title {
-	font-weight: bold;
-	font-size: clamp(1.25rem, 1.0625rem + 0.8333vw, 1.5rem);
+	font-size: 20px;
 }
 
 .preview-card__title:hover {
@@ -69,20 +77,22 @@ body {
 
 .preview-card__para {
 	color: #666;
+	line-height: 150%;
+	font-size: 14px;
 }
 
 .preview-card__user {
 	display: flex;
 	align-items: center;
-	gap: 16px;
+	gap: 12px;
 }
 
 .preview-card__user-img {
-	width: 48px;
+	width: 32px;
 }
 
 .preview-card__user-name {
-	font-weight: bold;
+	font-size: 14px;
 }
 
 .attribution {
@@ -104,5 +114,18 @@ body {
 	.attribution {
 		position: absolute;
 		bottom: 0;
+	}
+
+	.preview-card__learning,
+	.preview-card__date {
+		font-size: 14px;
+	}
+
+	.preview-card__title {
+		font-size: 24px;
+	}
+
+	.preview-card__para {
+		font-size: 1rem;
 	}
 }
