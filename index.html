@@ -8,12 +8,16 @@
   <title>Frontend Mentor | Blog preview card</title>
 </head>
 <body>
-  <div class="preview-card">
+  <article class="preview-card">
     <img class="illustration" src="assets/images/illustration-article.svg" alt="Illustration">
     <div class="preview-card__info">
       <span class="preview-card__learning">Learning</span>
-      <span class="preview-card__date">Published 21 Dec 2023</span>
-      <span class="preview-card__title">HTML & CSS foundations</span>
+      <time class="preview-card__date" datetime="2023-12-21">
+        Published 21 Dec 2023
+      </time>
+      <h2 class="preview-card__title">
+        HTML & CSS foundations
+      </h2>
       <p class="preview-card__para">
         These languages are the backbone of every website, defining structure, content, and presentation.
       </p>
@@ -22,7 +26,7 @@
       <img class="preview-card__user-img" src="assets/images/image-avatar.webp" alt="Avatar image">
       <span class="preview-card__user-name">Greg Hooper</span>
     </div>
-  </div>
+  </article>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
